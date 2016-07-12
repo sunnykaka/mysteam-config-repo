@@ -17,7 +17,7 @@ spring:
         connection.zeroDateTimeBehavior: convertToNull
 
   mvc:
-    throw-exception-if-no-handler-found: false
+    throw-exception-if-no-handler-found: true
 
   resources:
     add-mappings: false
