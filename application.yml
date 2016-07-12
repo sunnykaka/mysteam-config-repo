@@ -16,6 +16,9 @@ spring:
         current_session_context_class: org.springframework.orm.hibernate4.SpringSessionContext
         connection.zeroDateTimeBehavior: convertToNull
 
+  mvc:
+    throw-exception-if-no-handler-found: true
+
 # Discovery Server Access
 eureka:
   instance:
