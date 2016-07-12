@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.1.198:3306/user_service
+    username: root
+    password: root
+
+  cloud:
+    stream:
+      instanceCount: 1
+      instanceIndex: 0
+      kafka:
+        binder:
+          brokers: 192.168.1.198:9092,192.168.1.198:9093,192.168.1.198:9094
+          zkNodes: 192.168.1.198:2181
+          offsetUpdateTimeWindow: 10000
+          #offsetUpdateCount: 0
+          requiredAcks: 1
+          minPartitionCount: 1
+          replicationFactor: 1
+
+
+
+
+

@@ -1,0 +1,33 @@
+spring:
+  jpa:
+    show-sql: false
+    hibernate:
+      naming-strategy: org.hibernate.cfg.DefaultNamingStrategy
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        format_sql: true
+        query.substitutions: true 1, false 0
+        default_batch_fetch_size: 50
+        jdbc.batch_size: 50
+        order_inserts: true
+        max_fetch_depth: 2
+        current_session_context_class: org.springframework.orm.hibernate4.SpringSessionContext
+        connection.zeroDateTimeBehavior: convertToNull
+
+# Discovery Server Access
+eureka:
+  instance:
+    # hostname: localhost
+    preferIpAddress: true
+
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+
+
+
+
+
+
