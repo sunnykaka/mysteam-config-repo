@@ -32,7 +32,8 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:1111/eureka/
 
-
+hystrix:
+  command.default.execution.isolation.thread.timeoutInMilliseconds: 3000
 
 
 
