@@ -19,8 +19,6 @@ spring:
       instanceIndex: 0
       kafka:
         binder:
-          brokers: 192.168.239.129:9092,192.168.239.129:9093,192.168.239.129:9094
-          zkNodes: 192.168.239.129:2181
           offsetUpdateTimeWindow: 10000
           #offsetUpdateCount: 0
           requiredAcks: 1

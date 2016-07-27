@@ -1,3 +1,11 @@
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: 192.168.1.198:9092,192.168.1.198:9093,192.168.1.198:9094
+          zkNodes: 192.168.1.198:2181
+
 eureka:
   client:
     serviceUrl:
